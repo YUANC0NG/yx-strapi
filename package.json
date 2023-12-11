@@ -1,21 +1,31 @@
 {
-  "name": "wxcloudrun-express",
-  "version": "1.0.0",
-  "description": "微信云托管 express 框架模版",
-  "main": "index.js",
+  "name": "test-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "start": "node index.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "author": "",
-  "license": "Apache-2.0",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "morgan": "^1.10.0",
-    "mysql2": "^2.3.2",
-    "sequelize": "^6.8.0"
+    "@strapi/plugin-documentation": "^4.11.5",
+    "@strapi/plugin-i18n": "4.11.5",
+    "@strapi/plugin-users-permissions": "4.11.5",
+    "@strapi/strapi": "4.11.5",
+    "better-sqlite3": "8.0.1",
+    "mysql": "^2.18.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "294e0e18-9d65-447c-9b09-803ac1cf7773"
   },
   "engines": {
-    "node": ">=12.0.0"
-  }
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
